@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact - Dwight Tech Solution</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    function toggleForm() {
+      const formSection = document.getElementById("formSection");
+      formSection.style.display = formSection.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Contact Dwight Tech Solution</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Contact Information</h2>
+      <address>
+        Email: <a href="mailto:tholleyj4@gmail.com">tholleyj4@gmail.com</a><br />
+        Phone: 
+        <a href="tel:+23273694109">+232 73 694 109</a> /
+        <a href="tel:+23288110434">+232 88 110 434</a>
+      </address>
+    </section>
+
+    <section>
+      <h2>Send Us a Message</h2>
+      <button onclick="toggleForm()">Click to Contact Us</button>
+      <div id="formSection" style="display: none; margin-top: 15px;">
+        <iframe 
+          src="https://docs.google.com/forms/d/e/1FAIpQLSeD52pFOr1PtZfljDfmU2fEHH7q0RIpP7RWFLJH6wwyD59cTQ/viewform?embedded=true" 
+          width="640" 
+          height="896" 
+          frameborder="0" 
+          marginheight="0" 
+          marginwidth="0"
+        >Loading…</iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Dwight Tech Solution. All rights reserved.</p>
+  </footer>
+</body>
+</html>

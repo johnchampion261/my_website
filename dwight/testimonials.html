@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Testimonials - Dwight Tech Solution</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    function showForm() {
+      document.getElementById('feedbackForm').style.display = 'block';
+      document.getElementById('showFeedbackBtn').style.display = 'none';
+      document.getElementById('hideFeedbackBtn').style.display = 'inline-block';
+    }
+
+    function hideForm() {
+      document.getElementById('feedbackForm').style.display = 'none';
+      document.getElementById('showFeedbackBtn').style.display = 'inline-block';
+      document.getElementById('hideFeedbackBtn').style.display = 'none';
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Dwight Tech Solution</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="product.html">Products</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="testimonials.html" class="active">Testimonials</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="content-box">
+      <button id="showFeedbackBtn" onclick="showForm()">Show Feedback Form</button>
+      <button id="hideFeedbackBtn" onclick="hideForm()" style="display:none;">Hide Feedback Form</button>
+
+      <div id="feedbackForm" style="display:none; margin-top: 20px;">
+        <h2>Send Us Your Feedback</h2>
+        <iframe
+          title="Feedback Form"
+          src="https://docs.google.com/forms/d/e/1FAIpQLScmOujI9eI5wuSd1to_9BH-FczCcmiTj3n2mE3YDTiLNyiV7g/viewform?embedded=true"
+          height="626"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+        >
+          Loading…
+        </iframe>
+      </div>
+
+      <section style="margin-top: 40px;">
+        <h2>View Submitted Feedback</h2>
+        <iframe
+          title="Submitted Feedback Spreadsheet"
+          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTz_IK46wMI7cJtK-a4BTg6G8Iu95JCCBKoCZM9Ny84jeZ64x1_YB-knf3tS2T38dEqziSEG0JYOHbA/pubhtml"
+          height="400"
+          frameborder="0"
+        ></iframe>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Dwight Tech Solution. All rights reserved.</p>
+  </footer>
+</body>
+</html>
